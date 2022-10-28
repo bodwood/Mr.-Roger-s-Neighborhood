@@ -65,3 +65,15 @@ Code:
 const userNum = 12;
 getUserNum(userNum);
 Expected Output: "0 Beep! Boop! 3 4 5 6 7 8 9 Beep! Beep! Boop!";
+
+Test: "This should return Won't you be my neighbor! if a 3 is present with a number greater than 10"
+Code:
+const userNum = 13;
+getUserNum(userNum);
+Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!. Won't you be my neighbor?";
+
+Test: "This should return Beep! for numbers that contain 1 and are lower than ten
+Code:
+const userNum = 11;
+getUserNum(userNum);
+Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!"
