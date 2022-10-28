@@ -17,3 +17,9 @@ Code:
 const userNum = "hello";
 getUserNum(userNum);
 Expected Output: false;
+
+Test: "This should make an array out of the user's inputted number"
+Code:
+const userNum = "10";
+getUserNum(userNum);
+Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
