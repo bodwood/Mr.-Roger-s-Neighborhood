@@ -60,3 +60,8 @@ const userNum = 14;
 getUserNum(userNum);
 Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Beep!, Beep!, Beep!";
 
+Test: "This should return Boop! if a 2 is present after 1 of the same number (i.e. 12)"
+Code:
+const userNum = 12;
+getUserNum(userNum);
+Expected Output: "0 Beep! Boop! 3 4 5 6 7 8 9 Beep! Beep! Boop!";
