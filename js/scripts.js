@@ -3,16 +3,17 @@ function getUserNum(userNum) {
     return false;
   } else {
     const userNumArray = [];
-    for(i = 0; i <= userNum; i++){
-      userNumArray.push(i);
+    for (i = 0; i <= userNum; i++) {
+      if (i === 1) {
+        userNumArray.push("Beep!");
+      } else {
+        userNumArray.push(i);
+      }
     }
     let userNumArrayString = userNumArray.join(' ');
-    if(userNumArrayString.includes('1')){
-      return 'Beep!';
-    }else{
     return userNumArrayString;
-    }
+
   }
 }
 
-console.log(getUserNum(0));
+console.log(getUserNum(11));
