@@ -1,7 +1,7 @@
 //Business Logic
 function getUserNum(userNum) {
   if (!(Number(userNum))) {
-    return 'Try again' + '\n Please enter a number';
+    return false;
   } else {
     const userNumArray = [];
     for (i = 0; i <= userNum; i++) {
@@ -60,6 +60,7 @@ function handleInput(event) {
 
   const userInput = document.querySelector("#userInput").value;
   const answer = document.getElementById("answer");
+  const answerFalse = document.getElementById("answerFalse");
   const resetBtn = document.getElementById("btn_reset");
   const reverseBtn = document.getElementById("btn_reverse")
   const formBody = document.getElementById("formBody");
@@ -70,6 +71,12 @@ function handleInput(event) {
 
   const outputAnswer = getUserNum(userInput);
   answer.innerText = outputAnswer;
+
+  if(outputAnswer === false){
+    reverseBtn.setAttribute("class", "hidden");
+    answer.setAttribute("class", "hidden");
+    answerFalse.removeAttribute("class", "hidden");
+  }
 
   reverseBtn.addEventListener('click', function () {
     const reverseArray = outputAnswer.split(', ');

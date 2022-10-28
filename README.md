@@ -125,7 +125,7 @@ Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, 
 
 ## Known Bugs
 
-* __
+* _body background image doesn't go to bottom of screen_
 
 ---
 
