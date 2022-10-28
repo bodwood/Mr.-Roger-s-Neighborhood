@@ -9,23 +9,23 @@
 
 <body>
   <div id="formBody">
-  <div class="container">
-    <div class="jumbotron">
-      <form id="form">
-        <div class="row justify-content-center">
-          <label for="userInput">Enter a number:
-            <input type="text" name="userInput" id="userInput">
-          </label>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-1">
-            <button id="btn_Submit" type="submit" value="Submit">Submit</button>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row justify-content-center top">
+        <h1>Welcome to Mr. Roger's Neighborhood!</h1>
+      </div>
+        <form id="form">
+          <div class="row justify-content-center inputBox">
+            <label for="userInput">Enter a number:
+              <input type="text" name="userInput" id="userInput">
+            </label>
           </div>
-          <div class="col-lg-1">
-            <button id="btn_reset">Reset</button>
+          <div class="row justify-content-center">
+            <div class="col-lg-1">
+              <button id="btn_Submit" type="submit" value="Submit" class="btn btn-success">Submit</button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
       </div>
       <script src="js/scripts.js"></script>
     </div>
@@ -33,11 +33,15 @@
   <div id="hiddenDiv">
     <div class="container">
       <div class="jumbotron">
-        <div class="" id="anwer">
-          <h1 id="answer">You entered: </h1>
+        <div class="row justify-content-center">
+          <h1 id="answer"></h1>
+        </div>
+        <div class="row justify-content-center">
+          <button id="btn_reset" class="btn btn-danger btn-lg">Reset</button>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 

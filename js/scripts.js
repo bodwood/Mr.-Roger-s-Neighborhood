@@ -44,7 +44,7 @@ function getUserNum(userNum) {
       }
     }
     let userNumArrayString = userNumArray.join(', ');
-    return console.log(userNumArrayString);
+    return userNumArrayString;
   }
 }
 
@@ -60,9 +60,21 @@ function handleInput(event) {
   event.preventDefault();
 
   const userInput = document.querySelector("#userInput").value;
+  const answer = document.getElementById("answer");
+  const outputAnswer = getUserNum(userInput);
+  const resetBtn = document.getElementById("btn_reset");
 
   document.getElementById("formBody").style.visibility = "hidden";
   document.getElementById("hiddenDiv").style.visibility = "";
-  getUserNum(userInput);
 
+  answer.innerText = outputAnswer;
+
+  resetBtn.addEventListener('click', function() {
+    location.reload();
+  });
+  resetPage();
+}
+
+function resetPage(){
+  document.getElementById("form").reset();
 }
