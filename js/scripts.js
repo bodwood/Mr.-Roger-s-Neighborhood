@@ -6,8 +6,9 @@ function getUserNum(userNum) {
     for(i = 0; i <= userNum; i++){
       userNumArray.push(i);
     }
-    return userNumArray;
+    let userNumArrayString = userNumArray.join(' ');
+    return userNumArrayString;
   }
 }
 
-console.log(getUserNum(10));
+console.log(getUserNum(5));

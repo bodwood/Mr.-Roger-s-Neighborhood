@@ -6,7 +6,7 @@ const userNum = 1;
 getUserNum(userNum);
 Expected Output: 1
 
-Test: "This should return the user's inputted number"
+Test: "This should return the user's input number"
 Code:
 const userNum = 12;
 getUserNum(userNum);
@@ -18,8 +18,14 @@ const userNum = "hello";
 getUserNum(userNum);
 Expected Output: false;
 
-Test: "This should make an array out of the user's inputted number"
+Test: "This should make an array out of the user's input number"
 Code:
-const userNum = "10";
+const userNum = 10;
 getUserNum(userNum);
 Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+Test: "This should return a string of the array of numbers"
+Code:
+const userNum = 5;
+getUserNum(userNum);
+Expected Output: "0, 1, 2, 3, 4, 5";
