@@ -47,3 +47,16 @@ Code:
 const userNum = 5;
 getUserNum(userNum);
 Expected Output: "0 Beep! Boop! 3 4 5";
+
+Test: "This should replace 3 with 'Won't you be my neighbor?' if a 2 is found within the array"
+Code:
+const userNum = 5;
+getUserNum(userNum);
+Expected Output: "0 Beep! Boop! Won't you be my neighbor? 4 5";
+
+Test: "This should replace any number that contains 1 with Beep! if a 2 is found within the array"
+Code:
+const userNum = 14;
+getUserNum(userNum);
+Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Beep!, Beep!, Beep!";
+
