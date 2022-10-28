@@ -1,7 +1,7 @@
 //Business Logic
 function getUserNum(userNum) {
   if (!(Number(userNum))) {
-    return false;
+    return 'Try again' + '\n Please enter a number';
   } else {
     const userNumArray = [];
     for (i = 0; i <= userNum; i++) {
@@ -52,21 +52,23 @@ function getUserNum(userNum) {
 //UI Logic
 window.addEventListener("load", function () {
   const form = document.getElementById("form");
-  document.getElementById("hiddenDiv").style.visibility = "hidden";
   form.addEventListener("submit", handleInput);
 });
 
 function handleInput(event) {
   event.preventDefault();
 
+
   const userInput = document.querySelector("#userInput").value;
   const answer = document.getElementById("answer");
-  const outputAnswer = getUserNum(userInput);
   const resetBtn = document.getElementById("btn_reset");
+  const formBody = document.getElementById("formBody");
+  const hiddenDiv = document.getElementById("hiddenDiv");
 
-  document.getElementById("formBody").style.visibility = "hidden";
-  document.getElementById("hiddenDiv").style.visibility = "";
+  formBody.setAttribute("class", "hidden");
+  hiddenDiv.removeAttribute("class", "hidden");
 
+  const outputAnswer = getUserNum(userInput);
   answer.innerText = outputAnswer;
 
   resetBtn.addEventListener('click', function() {

@@ -5,3 +5,20 @@
 .inputBox{
   padding-bottom: 5%;
 }
+
+.container { 
+  min-height: 100%;
+  height: 100%;
+}
+
+.hiddenDiv{
+  padding-bottom: 100%;;
+}
+
+.hidden{
+  display: none;
+}
+
+.jumbotron{
+  margin-top: 2%;
+}
