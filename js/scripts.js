@@ -44,8 +44,25 @@ function getUserNum(userNum) {
       }
     }
     let userNumArrayString = userNumArray.join(', ');
-    return userNumArrayString;
+    return console.log(userNumArrayString);
   }
 }
 
-console.log(getUserNum(232));
+
+//UI Logic
+window.addEventListener("load", function () {
+  const form = document.getElementById("form");
+  document.getElementById("hiddenDiv").style.visibility = "hidden";
+  form.addEventListener("submit", handleInput);
+});
+
+function handleInput(event) {
+  event.preventDefault();
+
+  const userInput = document.querySelector("#userInput").value;
+
+  document.getElementById("formBody").style.visibility = "hidden";
+  document.getElementById("hiddenDiv").style.visibility = "";
+  getUserNum(userInput);
+
+}
