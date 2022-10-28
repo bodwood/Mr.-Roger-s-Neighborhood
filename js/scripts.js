@@ -1,3 +1,4 @@
+//Business Logic
 function getUserNum(userNum) {
   if (!(Number(userNum))) {
     return false;
@@ -46,3 +47,5 @@ function getUserNum(userNum) {
     return userNumArrayString;
   }
 }
+
+console.log(getUserNum(232));
