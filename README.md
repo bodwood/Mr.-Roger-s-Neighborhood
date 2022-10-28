@@ -29,3 +29,9 @@ Code:
 const userNum = 5;
 getUserNum(userNum);
 Expected Output: "0, 1, 2, 3, 4, 5";
+
+Test: "This should return 'Beep!' if a 1 is found in the string"
+Code:
+const userNum = 5;
+getUserNum(userNum);
+Expected Output: "Beep!";
