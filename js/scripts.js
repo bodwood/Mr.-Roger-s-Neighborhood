@@ -62,6 +62,7 @@ function handleInput(event) {
   const userInput = document.querySelector("#userInput").value;
   const answer = document.getElementById("answer");
   const resetBtn = document.getElementById("btn_reset");
+  const reverseBtn = document.getElementById("btn_reverse")
   const formBody = document.getElementById("formBody");
   const hiddenDiv = document.getElementById("hiddenDiv");
 
@@ -70,6 +71,11 @@ function handleInput(event) {
 
   const outputAnswer = getUserNum(userInput);
   answer.innerText = outputAnswer;
+
+  reverseBtn.addEventListener('click', function(){
+   const reverseArray = outputAnswer.split(', ');
+   answer.innerText = reverseArray.reverse().join(', ');
+  });
 
   resetBtn.addEventListener('click', function() {
     location.reload();
