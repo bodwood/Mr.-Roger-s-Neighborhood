@@ -42,3 +42,8 @@ const userNum = 5;
 getUserNum(userNum);
 Expected Output: "0 Beep! 2 3 4 5";
 
+Test: "This should replace 2 with 'Boop!' if a 2 is found within the array"
+Code:
+const userNum = 5;
+getUserNum(userNum);
+Expected Output: "0 Beep! Boop! 3 4 5";

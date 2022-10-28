@@ -6,6 +6,8 @@ function getUserNum(userNum) {
     for (i = 0; i <= userNum; i++) {
       if (i === 1) {
         userNumArray.push("Beep!");
+      } else if (i === 2) {
+        userNumArray.push("Boop!");
       } else {
         userNumArray.push(i);
       }
