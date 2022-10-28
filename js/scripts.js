@@ -58,7 +58,6 @@ window.addEventListener("load", function () {
 function handleInput(event) {
   event.preventDefault();
 
-
   const userInput = document.querySelector("#userInput").value;
   const answer = document.getElementById("answer");
   const resetBtn = document.getElementById("btn_reset");
@@ -72,17 +71,17 @@ function handleInput(event) {
   const outputAnswer = getUserNum(userInput);
   answer.innerText = outputAnswer;
 
-  reverseBtn.addEventListener('click', function(){
-   const reverseArray = outputAnswer.split(', ');
-   answer.innerText = reverseArray.reverse().join(', ');
+  reverseBtn.addEventListener('click', function () {
+    const reverseArray = outputAnswer.split(', ');
+    answer.innerText = reverseArray.reverse().join(', ');
   });
 
-  resetBtn.addEventListener('click', function() {
+  resetBtn.addEventListener('click', function () {
     location.reload();
   });
   resetPage();
 }
 
-function resetPage(){
+function resetPage() {
   document.getElementById("form").reset();
 }
